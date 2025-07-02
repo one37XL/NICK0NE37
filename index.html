@@ -3,84 +3,152 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Nick 1917</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta name="description" content="Portfolio of Nicklaus Njau - Front-End Web Developer">
+  <title>Nicklaus Njau | Front-End Developer</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
+  <!-- Skip to Content Link for Accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
   <!-- Header Section -->
-  <section>
-    <div class="head" data-text="NICK 1917">
-      <h1>NICK 1917</h1>
+  <header class="site-header">
+    <div class="header-container">
+      <div class="head" data-text="NICK 1917">
+        <h1>NICK 1917</h1>
+      </div>
+
+      <!-- Navigation Bar -->
+      <nav class="nav">
+        <button class="menu-toggle" aria-label="Toggle menu">
+          <i class="fas fa-bars"></i>
+        </button>
+        <ul class="nav-links">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
     </div>
+  </header>
 
-    <!-- Navigation Bar -->
-<div class="nav">
-  <button class="menu-toggle">&#9776;</button> <!-- Hamburger icon -->
-  <ul class="nav-links">
-    <li><a href="#section1">About</a></li>
-    <li><a href="#section2">Projects</a></li>
-    <li><a href="#section3">Contact</a></li>
-  </ul>
-</div>
+  <main id="main-content">
+    <!-- About Section -->
+    <section id="about" class="about-section">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-text">
+            <h2>About Me</h2>
+            <p>
+              Hi, I'm Nicklaus — a detail-oriented and passionate Front-End Web Developer with skills in web design, animation, and visual storytelling. 
+              I love creating responsive, interactive websites with clean code and creative flair.
+            </p>
+            <p>
+              My toolbox includes HTML5, CSS3, JavaScript (ES6+), React, and modern design tools. I'm passionate about accessibility, performance, and creating delightful user experiences.
+            </p>
+          </div>
+          <div class="about-image">
+            <img src="project1.png" alt="Nicklaus Njau" class="profile-img">
+          </div>
+        </div>
+      </div>
+    </section>
 
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+      <div class="container">
+        <h2>Featured Projects</h2>
+        <div class="slider-container">
+          <div class="slider">
+            <div class="slide">
+              <div class="project-card">
+                <img src="project2.png" alt="E-commerce Website">
+                <div class="project-info">
+                  <h3>E-commerce Platform</h3>
+                  <p>React, Node.js, MongoDB</p>
+                  <a href="#" class="project-link">View Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="project-card">
+                <img src="project3.png" alt="Portfolio Website">
+                <div class="project-info">
+                  <h3>Portfolio Website</h3>
+                  <p>HTML5, CSS3, JavaScript</p>
+                  <a href="#" class="project-link">View Project</a>
+                </div>
+              </div>
+            </div>
+            <div class="slide">
+              <div class="project-card">
+                <img src="project4.png" alt="Task Management App">
+                <div class="project-info">
+                  <h3>Task Management App</h3>
+                  <p>React, Firebase</p>
+                  <a href="#" class="project-link">View Project</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <button class="slider-nav prev"><i class="fas fa-chevron-left"></i></button>
+          <button class="slider-nav next"><i class="fas fa-chevron-right"></i></button>
+          <div class="slider-indicators">
+            <span class="indicator active"></span>
+            <span class="indicator"></span>
+            <span class="indicator"></span>
+          </div>
+        </div>
+      </div>
+    </section>
 
-  </section>
-<br> 
-<br>
-<br>
-<section class="about-section" id="section1">
-  <div class="about-content">
-    <h2>About Me</h2>
-    <p>
-      Hi, I'm Nicklaus — a detail-oriented and passionate Front-End Web Developer with skills in web design, animation, and visual storytelling. 
-      I love creating responsive, interactive websites with clean code and creative flair. When I’m not coding, you’ll find me exploring music, art, and nature.
-    </p>
-  </div>
-</section>
-<br>
-<br>
-<br>
-<section class="text-block">
-  <h2>Why I Love Web Development</h2>
-  <p>
-    Web development combines creativity with logic. I enjoy turning ideas into beautiful, interactive websites that solve real problems. Whether it's animations, responsive design, or performance optimization — I thrive in bringing visions to life.
-  </p>
-</section>
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+      <div class="container">
+        <h2>Let's Connect</h2>
+        <div class="contact-grid">
+          <form class="contact-form" action="#" method="post">
+            <div class="form-group">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" placeholder="Your Name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="email" placeholder="Your Email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+            <button type="submit" class="btn-primary">Send Message</button>
+          </form>
+          <div class="contact-info">
+            <h3>Other Ways to Reach Me</h3>
+            <ul class="social-links">
+              <li><a href="https://github.com/one37XL" aria-label="GitHub"><i class="fab fa-github"></i> GitHub</a></li>
+              <li><a href="LinkedIn.com" aria-label="LinkedIn"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+              <li><a href="x.com" aria-label="x"><i class="fab fa-x"></i> X</a></li>
+              <li><a href="mailto:doddleklaus@outlook.com"><i class="fas fa-envelope"></i> doddleklaus@outlook.com</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
 
-<section class="projects-section" id="section2">
-  <h2>My Projects</h2>
-  <div class="slider">
-    <div class="slide-track">
-      <div class="slide"><img src="project1.png" alt="Project 1"></div>
-      <div class="slide"><img src="project2.png" alt="Project 2"></div>
-      <div class="slide"><img src="project3.png" alt="Project 3"></div>
-      <div class="slide"><img src="project4.png" alt="Project 4"></div>
-      <!-- Repeat slides to make it loop smoothly -->
-      <div class="slide"><img src="project1.png" alt="Project 1"></div>
-      <div class="slide"><img src="project2.png" alt="Project 2"></div>
-      <div class="slide"><img src="project3.png" alt="Project 3"></div>
-      <div class="slide"><img src="project4.png" alt="Project 4"></div>
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> Nicklaus Njau. All rights reserved.</p>
+      <p>Designed with <span aria-label="love">❤️</span> by Nicklaus</p>
+      <a href="#main-content" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+      </a>
     </div>
-  </div>
-</section>
+  </footer>
 
-<section class="contact-section" id="section3">
-  <h2>Contact Me</h2>
-  <form class="contact-form" action="#" method="post">
-    <input type="text" name="name" placeholder="Your Name" required>
-    <input type="email" name="email" placeholder="Your Email" required>
-    <textarea name="message" rows="5" placeholder="Your Message" required></textarea>
-    <button type="submit">Send Message</button>
-  </form>
-</section>
-
-
-<footer class="site-footer">
-  <p>&copy; 2025 Nicklaus Njau. All rights reserved.</p>
-  <p>Designed with 💻, 🎨, and ❤️</p>
-</footer>
-
-
-  <script defer src="app.js"></script>
+  <script src="app.js"> 
+  </script>
 </body>
 </html>
